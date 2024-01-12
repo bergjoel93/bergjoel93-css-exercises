@@ -2,6 +2,8 @@
 you'll learn about it later. */
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
 
+
+
 body {
   margin: 0;
   background: #eee;
@@ -45,4 +47,31 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+/* Solutions */
+.header{
+  display: flex;
+  
+}
+
+.header-divider-1, .header-divider-2 {
+  display: flex;
+  flex: 1;
+  padding: 8px;
+}
+
+.header-divider-2{
+ justify-content: right;
+ align-items: center;
+ padding: 8px;
+}
+
+ul.links {
+  display: flex;
+  gap: 8px;
+}
+
+button.notifications {
+  margin: 8px;
 }
