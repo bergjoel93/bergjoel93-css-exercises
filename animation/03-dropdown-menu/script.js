@@ -3,13 +3,15 @@ const menuTitle = document.querySelector(".menu-title");
 const dropdownMenu = document.querySelector(".dropdown-menu");
 
 menuTitle.addEventListener("click", (e) => {
+  //console.log(e);
   if (e.target === e.currentTarget) {
     dropdownMenu.classList.toggle("visible");
-  }  
-})
+  }
+});
 
 window.addEventListener("click", (e) => {
+  //console.log(e);
   if (!dropdownContainer.contains(e.target)) {
-    dropdownMenu.classList.remove("visible")
+    dropdownMenu.classList.remove("visible");
   }
-})
+});
